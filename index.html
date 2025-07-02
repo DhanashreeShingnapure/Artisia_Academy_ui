@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="landing_page">
+        <div class="navigation">
+            <div class="nav-toggle" id="navToggle">&#9776;</div>
+            <div class="nav-links" id="navLinks">
+                <a href="#">Home</a>
+                <a href="about/about.html">About</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Workshops</a>
+                <a href="#">Courses</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <div class="workshops">
+      <div class="workhop_title">
+          <h1>WORKSHOPS</h1>
+          <p>REGISTRATION OPEN</p>
+      </div>
+      <div class="workshop_posters">
+        <img src="assets/images/Canvas Painting/1img.png" class="left_tilt"/>
+        <img src="assets/images/Canvas Painting/2img.png" class="right_tilt"/>
+        <img src="assets/images/Canvas Painting/3img.png" class="left_tilt"/>
+        <img src="assets/images/Canvas Painting/4img.png" class="left_tilt"/>
+        <img src="assets/images/Canvas Painting/5img.png" class="right_tilt"/>
+        <img src="assets/images/Canvas Painting/6img.png" class="left_tilt"/>
+        <img src="assets/images/Canvas Painting/7img.png" class="right_tilt"/>
+      </div>
+    </div>
+    <div class="Upcoming_workshops">
+      <div class="workhop_title">
+          <h1>UPCOMING WORKSHOPS</h1>
+          <p>Be ready to experience the amazing Workshops!!</p>
+      </div>
+      <div class="upcoming_workshop_posters">
+        <img src="assets/images/Canvas Painting/11.png" class="left_tilt"/>
+        <img src="assets/images/Canvas Painting/12.png" class="right_tilt"/>
+        <img src="assets/images/Canvas Painting/13.png" class="left_tilt"/>
+        <img src="assets/images/Canvas Painting/14.png" class="left_tilt"/>
+      </div>
+    </div>
+    <div class="message">
+        <div class="msg">
+            <p class="greet">Hello Creative Souls,</p>
+            <p>
+                No matter your age or experience, Artisia Academy is a place where you can start — or restart — your artistic journey. Here, we celebrate progress over perfection and joy over judgment.
+                Every artist begins with a single line, a single idea, a single moment. Let this be yours.
+                I’m thrilled to guide you and watch your confidence bloom with every creation.
+                Warm regards,
+                <br/>
+                <b>Instructor – Artisia Academy</b>
+            </p>
+        </div>
+        <div class="instructor_img">
+            <img src="assets/images/instrictor.jpg" class="right_tilt"/>
+        </div>
+    </div>
+    <div class="reviews">
+        <div class="reviews_title">
+          <h1>CUSTOMER REVIEWS</h1>
+      </div>
+      <div class="review_msgs">
+        <div class="given_review">
+            <img src="assets/images/black_15675980.png"/>
+            <p>“I had never touched a paintbrush before joining Artisia Academy, but now I can’t imagine my week without it! The instructor is so encouraging and patient — every session is filled with warmth, learning, and a sense of creative accomplishment.”</p>
+            <h5>— Frankie M. —</h5>
+        </div>
+        <div class="given_review">
+            <img src="assets/images/man_13385962.png"/>
+            <p>“My daughter looks forward to every class! Artisia Academy has not only improved her artistic skills but also her confidence. The environment is safe, joyful, and nurturing. Truly a gem for kids and parents alike!”</p>
+            <h5>— Carey S. —</h5>
+        </div>
+        <div class="given_review">
+            <img src="assets/images/woman_360945.png"/>
+            <p>“As someone who paints for peace of mind, I’ve found Artisia Academy to be a sanctuary. The space, the vibe, the guidance — everything is so thoughtfully designed. I’ve rediscovered my passion for art thanks to this beautiful academy.”</p>
+            <h5>— Harley B. —</h5>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+        <img src="assets/images/cont-removebg-preview.png"/>
+        <div class="details">
+            <h4>We would love to <br/>hear from you!</h4>
+            <h6>Phone</h6>
+            <p>+91 98765 43210</p>
+            <h6>Address</h6>
+            <p>Artisia Academy HQ<br/>
+                45, Palm Grove Lane,<br/>
+                Sector 12, Andheri East,<br/>
+                Mumbai, Maharashtra – 400059</p>
+            <h6>Email</h6>
+            <p>support@artisia.co</p>
+        </div>
+    </div>
+
+    <script>
+        const navToggle = document.getElementById("navToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+
+
+
+
+
+</html>

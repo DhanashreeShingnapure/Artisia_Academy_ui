@@ -1,0 +1,279 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landing_page{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url(assets/images/cover1.png);
+  background-color: #dcb495;
+  background-size: cover; /* Makes the image cover the whole area */
+  background-position: center; /* Keeps image centered */
+  background-repeat: no-repeat;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #112f3f;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.nav-links a{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #112f3f;
+  
+}
+
+.nav-links a:hover{
+  text-decoration: underline;
+}
+
+.workshops{
+  background-image: url(assets/images/Upcoming_background.png);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.workhop_title{
+  margin-top: 20px;
+}
+
+.workshop_posters{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.workshop_posters img{
+  width: 290px;
+  margin: 70px;
+  cursor: pointer;
+}
+
+.workshop_posters img:hover{
+  transform: rotateY(12deg) rotateX(5deg) scale(1.03);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
+}
+
+.left_tilt{
+  transform: rotate(-5deg);
+}
+
+.right_tilt{
+  transform: rotate(5deg);
+}
+
+.Upcoming_workshops{
+  background-color: #f6d9aa;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.upcoming_workshop_posters img{
+  width: 200px;
+  margin: 70px;
+}
+
+.upcoming_workshop_posters img:hover{
+  transform: rotateY(12deg) rotateX(5deg) scale(1.03);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
+}
+
+.message{
+  display: flex;
+  justify-content: space-around;
+  background-color: #9caccd;
+  padding: 30px;
+}
+
+.msg{
+  width: 50%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: #112f3f;
+  margin: 30px;
+  line-height: 2;
+}
+
+.greet{
+  font-size: 2rem;
+}
+
+.instructor_img img{
+  width: 350px;
+  margin: 30px;
+}
+
+.reviews{
+  padding: 20px;
+}
+
+.reviews_title{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.review_msgs{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .given_review{
+  background-image: url(assets/images/poster.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.given_review img{
+  width: 100px;
+  display: flex;
+  justify-content: center;
+} */
+
+  .given_review {
+    background-image: url(assets/images/poster1.png);
+    text-align: center; /* Center contents horizontally */
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
+    margin: 20px;
+  }
+
+  .given_review img {
+    width: 100px;              /* Adjust size as needed */
+    height: 100px;
+    border-radius: 50%;        /* Makes the image round */
+    object-fit: cover;         /* Ensures image fills the circle */
+    display: block;
+    margin: 0 auto 15px;       /* Center and add spacing below */
+    
+  }
+
+  .given_review p {
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .given_review h5{
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .contact{
+    background-color: #9caccd;
+    display: flex;
+    padding: 30px;
+  }
+
+  .contact img{
+    width: 700px;
+  }
+
+  .details{
+    flex-direction: column;
+    padding: 30px;
+    margin: 30px;
+  }
+
+  .details h4{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .details h6{
+    color: #112f3f;
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+
+  .details p{
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .nav-toggle {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .landing_page{
+    background-image: url(assets/images/portrait.png);
+  }
+  .message{
+    flex-direction: column;
+    align-items: center ;
+    padding: 20px;
+  }
+  .msg{
+    width: 90%;
+    text-align: justify;
+  }
+ .review_msgs{
+  flex-direction: column;
+  align-items: center;
+ }
+ .contact{
+  flex-direction: column;
+  align-items: center;
+ }
+ .details{
+  text-align: center;
+ }
+.details h6{
+    font-size: 2rem;
+  }
+ .details p{
+  font-size: 1.5rem;
+ }
+}
+
