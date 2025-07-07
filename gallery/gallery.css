@@ -1,0 +1,134 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fdf9f6;
+  padding: 30px;
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.navigation p {
+  font-family: 'Alice', serif;
+  color: #443126;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-left: 30px;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #112f3f;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  width: 100vw;
+  justify-content: end;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.nav-links a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #112f3f;
+  margin-right: 30px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Gallery Title */
+.gallery-title {
+  text-align: center;
+  color: #443126;
+  font-size: 2rem;
+  margin: 30px 0;
+}
+
+/* Masonry Gallery Container */
+.masonry-gallery {
+  column-count: 4;
+  column-gap: 20px;
+  background-image: url(../assets/images/Gallery/doodling11.png);
+}
+
+/* Image Styling */
+.masonry-gallery img,
+.masonry-gallery video {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect */
+.masonry-gallery img:hover,
+.masonry-gallery video:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .masonry-gallery {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .masonry-gallery {
+    column-count: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .navigation p {
+    font-size: 1.5rem;
+  }
+
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-toggle {
+    display: block;
+    padding: 0 20px;
+    justify-content: flex-start;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+  }
+}
