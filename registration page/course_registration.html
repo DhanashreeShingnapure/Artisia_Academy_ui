@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register for Course</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="registration.css" />
+</head>
+<body>
+  <div class="register-container">
+    <h2>Register for Course</h2>
+    <form class="register-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your full name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required />
+
+      <label for="course">Select Course</label>
+      <select id="course" required>
+        <option value="">-- Select --</option>
+        <option value="Foundation_Drawing">Foundation of Drawing</option>
+        <option value="Sketching">Sketching & Line Art Mastery</option>
+        <option value="Watercolor">Watercolor Techniques</option>
+        <option value="Acrylic">Acrylic Painting Essentials</option>
+        <option value="Kids">Creative Art for kids</option>
+        <option value="Advance_portrait">Advanced Portrait Drawing</option>
+        <option value="Mandala">Mandala & Zantangle Art</option>
+        <option value="Oil_painting">Oil Painting Basics</option>
+        <option value="Mixed_Media">Mixed Media & Textured Art</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>
