@@ -89,7 +89,6 @@
   height: 500px; 
   display: flex;
   justify-content: space-between;
-  /* background: #fff; */
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   color: #112f3f;

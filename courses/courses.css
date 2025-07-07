@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+}
+
+.landing_page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(../assets/images/Courses/neww_landscape.png);
+    background-size: cover;
+    background-position: center;
+    /* Keeps image centered */
+    background-repeat: no-repeat;
+}
+
+.navigation {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.navigation p {
+    font-family: 'Alice', serif;
+    color: #443126;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-left: 30px;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 2rem;
+    color: #112f3f;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    width: 100vw;
+    justify-content: end;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #112f3f;
+    margin-right: 30px;
+
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.courses-section {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.course-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.course-card:hover{
+    box-shadow: 0 0 25px rgba(17, 47, 63, 0.4);
+}
+
+.course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.course-content {
+    padding: 15px;
+}
+
+.course-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #112f3f;
+}
+
+.course-content p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.register-btn {
+    margin-top: 15px;
+    display: inline-block;
+    background-color: #112f3f;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.register-btn:hover {
+    background-color: #064c78;
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .navigation p {
+        font-size: 1.5rem;
+    }
+
+    .nav-header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav-toggle {
+        display: block;
+        padding: 0 20px;
+        justify-content: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .landing_page {
+        background-image: url(../assets/images/Courses/neww_portrait.png);
+    }
+}
