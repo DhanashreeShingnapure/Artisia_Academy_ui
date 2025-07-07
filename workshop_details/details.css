@@ -1,0 +1,111 @@
+.back-btn {
+  background-color: #112f3f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.back-btn:hover {
+  background-color: #033d62;
+}
+
+.workshop-card-two-col {
+  display: flex;
+  flex-direction: row;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  color: #112f3f;
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+.workshop-image {
+  flex: 1;
+  min-width: 40%;
+}
+
+.workshop-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.workshop-content {
+  flex: 1;
+  padding: 25px 30px;
+}
+
+.workshop-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.instructor {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.workshop-details p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.workshop-description {
+  margin: 15px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.workshop-includes h4 {
+  margin-bottom: 8px;
+}
+
+.workshop-includes ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.workshop-includes ul li::before {
+  content: "🎯 ";
+}
+
+.workshop-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.register-btn {
+  background-color: #112f3f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.register-btn:hover {
+  background-color: #034872;
+}
+
+@media (max-width: 768px) {
+  .workshop-card-two-col, .workshop-footer  {
+    flex-direction: column;
+  }
+
+  .workshop-image, .workshop-content{
+    width: 100%;
+  }
+
+  .workshop-image img {
+    height: 250px;
+  }
+}
