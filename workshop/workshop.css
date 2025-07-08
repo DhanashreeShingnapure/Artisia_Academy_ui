@@ -101,6 +101,7 @@
 
 .coming-soon{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -196,13 +197,13 @@
     background-image: url(../assets/images/Workshop/portraitwonders.png);
   }
 
-  .content{
+  /* .content{
     flex-direction: column;
   }
 
   .coming-soon{
     flex-direction: column;
-  }
+  } */
 
   .workshop{
     background-image: url(../assets/images/Workshop/portrait_doodle.png);
