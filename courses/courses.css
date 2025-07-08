@@ -72,6 +72,7 @@ body {
     gap: 20px;
     padding: 20px;
     justify-content: center;
+    background-image: url(../assets/images/Courses/doodling11.png);
 }
 
 .course-card {
@@ -165,5 +166,9 @@ body {
 
     .landing_page {
         background-image: url(../assets/images/Courses/neww_portrait.png);
+    }
+
+    .courses-section{
+        background-image: url(../assets/images/Courses/portrait_doodle.png);
     }
 }
